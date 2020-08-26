@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imageslider</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: grey;
+        }
+        
+        .slider {
+            width: 900px;
+            height: 600px;
+            background: url(https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_960_720.jpg);
+            margin: 30px auto;
+            animation: slide 20s infinite;
+            box-shadow: honeydew 2px 2px 25px;
+        }
+        
+        @keyframes slide {
+            25% {
+                background: url(https://cdn.pixabay.com/photo/2016/11/14/04/36/boy-1822614_960_720.jpg);
+            }
+            50% {
+                background: url(https://cdn.pixabay.com/photo/2015/06/22/08/38/siblings-817369_960_720.jpg);
+            }
+            75% {
+                background: url(https://cdn.pixabay.com/photo/2016/01/09/18/27/old-1130731_960_720.jpg);
+            }
+            100% {
+                background: url(https://cdn.pixabay.com/photo/2015/05/15/14/57/sand-768783_960_720.jpg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+
+    </div>
+</body>
+
+
+</html>
