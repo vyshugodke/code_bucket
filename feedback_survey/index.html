@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            background: url(https://www.callcentrehelper.com/images/stories/2020/01/holding-star-760.jpg)no-repeat center center/cover;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Russo One', sans-serif;
+            font-size: 32px;
+        }
+        
+        .tab {
+            display: contents;
+            padding: 45px 156px;
+        }
+        
+        .tab td {
+            padding: 25px 74px;
+        }
+        
+        table tr {
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .row1,
+        .row3,
+        .row5,
+        .row7 {
+            background-color: rgb(248, 244, 236);
+        }
+        
+        .col1,
+        .row2,
+        .row4,
+        .row6 {
+            background-color: rgb(212, 196, 164);
+        }
+        
+        .container {
+            padding: 13px 13px;
+        }
+        
+        #end {
+            font-family: fantasy;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        #btn {
+            background-color: rgb(122, 88, 93);
+            font-size: 25px;
+            padding: 4px;
+            margin-left: 63px;
+        }
+        
+        .container input {
+            padding: 3px 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Restaurant feedback Survey</h1>
+    <form action="" class="form">
+        <div class="container">
+            <label for="Name">Name:</label>
+            <input type="text">
+        </div>
+        <div class="container">
+            <label for="day">Day visited:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="container">
+            <input type="radio" name="dine">Dine out
+            <input type="radio" name="dine">Take away
+            <input type="radio" name="dine">Breakfast
+            <input type="radio" name="dine">Lunch
+            <input type="radio" name="dine">Dinner
+
+        </div>
+        <div class="container">
+            <label for="Email">Email:</label>
+            <input type="email">
+        </div>
+        <div class="container">
+            <label for="Name">What did you order:</label>
+            <input type="text">
+        </div>
+        <div class="table1">
+            <table class="tab">
+                <tr class="col1">
+                    <td></td>
+                    <th scope="col">Excellent</th>
+                    <th scope="col">Very Good</th>
+                    <th scope="col">Good</th>
+                    <th scope="col">poor</th>
+
+                </tr>
+                <tr class="row1">
+                    <th scope="row">Food quality</th>
+                    <td><input type="radio" name="dine"></td>
+                    <td><input type="radio" name="dine"></td>
+                    <td><input type="radio" name="dine"></td>
+                    <td><input type="radio" name="dine"></td>
+                </tr>
+                <tr class="row2">
+                    <th scope="row">ambience</th>
+                    <td><input type="radio" name="ambience"></td>
+                    <td><input type="radio" name="ambience"></td>
+                    <td><input type="radio" name="ambience"></td>
+                    <td><input type="radio" name="ambience"></td>
+                </tr>
+                <tr class="row3">
+                    <th scope="row">Cleanliness</th>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                    <td><input type="radio" name="clean"></td>
+                </tr>
+                <tr class="row4">
+                    <th scope="row">Pricing</th>
+                    <td><input type="radio" name="price"></td>
+                    <td><input type="radio" name="price"></td>
+                    <td><input type="radio" name="price"></td>
+                    <td><input type="radio" name="price"></td>
+                </tr>
+
+                <tr class="row5">
+                    <th scope="row">Staff service</th>
+                    <td><input type="radio" name="service"></td>
+                    <td><input type="radio" name="service"></td>
+                    <td><input type="radio" name="service"></td>
+                    <td><input type="radio" name="service"></td>
+                </tr>
+                <tr class="row6">
+                    <th scope="row">Parking</th>
+                    <td><input type="radio" name="parking"></td>
+                    <td><input type="radio" name="parking"></td>
+                    <td><input type="radio" name="parking"></td>
+                    <td><input type="radio" name="parking"></td>
+                </tr>
+                <tr class="row7">
+                    <th scope="row">Over all experience</th>
+                    <td><input type="radio" name="exp"></td>
+                    <td><input type="radio" name="exp"></td>
+                    <td><input type="radio" name="exp"></td>
+                    <td><input type="radio" name="exp"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container">
+            <label for="text">Additional comments, questions or suggestions:</label>
+            <br>
+            <textarea name="textarea" id="mytext" cols="70" rows="7"></textarea>
+        </div>
+        <div class="container">
+            <button id="btn">Submit</button>
+        </div>
+        <div class="container" id="end">
+            Thank you for taking the time to fill out this survey. Hope to see you soon!
+        </div>
+    </form>
+</body>
+
+</html>
