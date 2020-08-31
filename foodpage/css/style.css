@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(20, 16, 16);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+}
+
+.logo {
+    margin: 3px 6px;
+}
+
+.logo img {
+    height: 59px;
+    margin: 3px 6px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 13px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(253, 251, 251);
+}
+
+#home {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 200px;
+    height: 330px;
+    /* position: relative; */
+}
+
+.primarycenter {
+    font-size: 2.5rem;
+    padding: 3px;
+    margin: 3px;
+}
+
+#home p {
+    padding: 3px 3px;
+    margin: 3px;
+}
+
+.btn {
+    padding: 5px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    border: 2px solid rgb(36, 34, 34);
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    background: url(https://cdn.pixabay.com/photo/2017/12/10/14/47/piza-3010062_960_720.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+}
+
+
+/* section {
+    height: 350px;
+} */
+
+.center {
+    text-align: center;
+}
+
+.box img {
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+.primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.secondary {
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.servicescontainer {
+    display: flex;
+    margin: 30px;
+}
+
+.servicescontainer .box {
+    padding: 25px;
+    margin: 3px 6px;
+    border: 2px solid red;
+    background-color: rgb(206, 182, 182);
+    border-radius: 15px;
+}
+
+.servicescontainer p {
+    padding: 3px;
+}
+
+.client-item img {
+    height: 140px;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientsection::before {
+    content: "";
+    background: url(https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.clientsection {
+    /* height: 344px; */
+    position: relative;
+}
+
+.client-item {
+    padding: 34px;
+    margin: 5px 3px;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url(https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_960_720.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 3px 3px;
+}
+
+.contactsection input,
+.contactsection textarea {
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+.contactsection {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 34px;
+}
+
+.contactsection form {
+    width: 40%;
+}
+
+.contactsection label {
+    font-size: 1.3rem;
+}
